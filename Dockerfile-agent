@@ -1,0 +1,12 @@
+FROM ubuntu:jammy
+
+RUN apt-get update
+RUN apt-get install openjdk-17-jdk -y
+RUN apt-get install wget -y
+RUN apt-get install unzip -y
+RUN wget https://dlcdn.apache.org/maven/maven-3/3.9.4/binaries/apache-maven-3.9.4-bin.zip
+RUN unzip apache-maven-3.9.4-bin.zip
+RUN export JAVA_HOME=/usr/bin/java
+RUN export MAVEN_HOME=/apache-maven-3.9.4-bin/bin
+ENTRYPOINT [ "bin/sh" ]
+

@@ -14,6 +14,12 @@ pipeline {
     
     
     stages{
+        stage ('Checkout') {
+            steps{
+                checkout poll: false, scm: scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/vcjain/docker-agent-demo.git']])
+            }
+            
+        }
         stage ('Build') {
             steps {
                 echo "Build Stage is in progress"
