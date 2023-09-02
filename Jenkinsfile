@@ -1,6 +1,13 @@
 pipeline {
     
-   agent { dockerfile true }
+   agent {
+        dockerfile {
+            dir '.'
+            filename 'Dockerfile'
+            label 'docker-java'
+        }
+    }
+
     tools {
       maven 'maven3'
     }
