@@ -1,10 +1,10 @@
 pipeline {
     
    agent {
-        dockerfile {
-            dir '.'
-            filename 'Dockerfile'
-            label 'docker-java'
+        docker {
+            alwaysPull true
+            image 'vcjain/dockeragent'
+            label 'ssh'
         }
     }
 
