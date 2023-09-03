@@ -11,6 +11,7 @@
 - Navigate to ManageJenkins--> Security--> Agent
 - Enable TCP port for inbound agents
 - Select Fixed, and give port value as 50000
+- Install plugin Docker and Docker Pipeline
 
 ## Adding Node as Java Agent
 - Naivate to ManageJenkins--> Node
@@ -37,3 +38,9 @@
 - - Add host and credentials, private key for slave node
 - - Select 'Non verifying' in Host key verification
 - On Node page, check the status, you can relauch and check logs
+
+## Running Docker container
+
+- Install docker on a slave machine. Follow instruction from below url
+- https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04
+- Relaunch Instance
