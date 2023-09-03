@@ -3,7 +3,7 @@ pipeline{
         dockerfile {
             dir '.'
             filename 'Dockerfile-agent'
-            label 'agent-ssh'
+            label 'ssh'
         }
     }
     stages{
