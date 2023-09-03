@@ -44,3 +44,13 @@
 - Install docker on a slave machine. Follow instruction from below url
 - https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04
 - Relaunch Instance
+
+----
+
+<br>
+<br>
+# Usages
+
+- Launch pipeline using Jenkinsfile for basic Java application on a agent with Java already installed
+- Launch pipeline using Jenkinsfile-docker for using agent as docker with image
+- Launch pipeline using Jenkinsfile-dockerfile for using agent as docker with dockerfile kept in the repo along with Jenkinsfile
