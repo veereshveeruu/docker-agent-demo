@@ -1,11 +1,7 @@
 pipeline {
     
    agent {
-        docker {
-            alwaysPull true
-            image 'vcjain/dockeragent'
-            label 'ssh'
-        }
+        label 'ssh'
     }
 
     tools {
